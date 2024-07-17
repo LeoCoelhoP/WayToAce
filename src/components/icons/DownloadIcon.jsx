@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function DownloadIcon() {
+export default function DownloadIcon({ className }) {
 	return (
 		<svg
 			xmlns='http://www.w3.org/2000/svg'
@@ -11,7 +11,8 @@ export default function DownloadIcon() {
 			stroke='currentColor'
 			strokeWidth='2'
 			strokeLinecap='round'
-			strokeLinejoin='round'>
+			strokeLinejoin='round'
+			className={className}>
 			<path stroke='none' d='M0 0h24v24H0z' fill='none' />
 			<path d='M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2' />
 			<path d='M7 11l5 5l5 -5' />
