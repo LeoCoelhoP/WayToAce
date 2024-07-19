@@ -4,6 +4,7 @@ import Banner from '../components/Banner';
 import Filter from '../components/Filter';
 import NavBar from '../components/NavBar';
 import PracticeExamsContainer from '../components/PracticeExamsContainer';
+import { useTranslation } from 'react-i18next';
 
 const examNames = [
 	{
@@ -36,10 +37,11 @@ export default function Home() {
 			prev && prev.downloads > current.downloads ? prev : current,
 		),
 	);
+	const { t } = useTranslation();
 
 	return (
 		<>
-			<Banner />
+			<Banner imgSrc={'banner.jpg'} bannerText={t('bannerText')} />
 			<NavBar
 				filtering={filtering}
 				searching={searching}

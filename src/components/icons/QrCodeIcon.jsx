@@ -1,8 +1,9 @@
 import React from 'react';
 
-export default function QrCodeIcon({ size, className }) {
+export default function QrCodeIcon({ onClick, size, className }) {
 	return (
 		<svg
+			onClick={onClick}
 			xmlns='http://www.w3.org/2000/svg'
 			width={size}
 			height={size}

@@ -11,6 +11,9 @@ export default {
 				imageBackground: {
 					50: '#F8FBEA',
 				},
+				facebookColor: {
+					50: '#1877F2',
+				},
 			},
 			boxShadow: {
 				bottom: '0 4px 5px -5px #333',

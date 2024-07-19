@@ -1,6 +1,6 @@
 {
 	"autoTranslate": "Tradução Automática",
-	"bannerText": "Baixe provas gratuitas ou faça-as online para impulsionar seus estudos e alcançar o sucesso hoje!",
+	"bannerText": "Baixe provas gratuitas ou faça-as online para impulsionar seus resultados!",
 	"brazil": "Brasil:",
 	"checker": "Corretor",
 	"darkMode": "Modo Escuro",
@@ -21,8 +21,20 @@
 	"southAmerica": "América do Sul",
 	"oceania": "Oceania",
 	"north": "Norte",
+	"checkerPageTitle": "Por favor, Carregue Seu",
+	"useCamera": "Usar Camêra",
+	"or": "OU",
+	"uploadButton": "Selecione a foto de seu dispositivo",
+	"noUserChecker": "Entre para usar o corretor de gabarito e receber dicas de estudos personalizadas.",
+	"answerKey": "Gabarito",
 	"northeast": "Nordeste",
 	"midwest": "Centro-Oeste",
 	"southeast": "Sudeste",
-	"south": "Sul"
+	"south": "Sul",
+	"date": "Data",
+	"exam": "Exame",
+	"performance": "Desempenho",
+	"uploadAnswerKey": "Carregue Seu Gabarito",
+	"lastResults": "Últimos Resultados:",
+	"checkerBanner": "Por favor, assegure-se de que todo o papel na imagem esteja enquadrado e tire a foto na vertical!"
 }

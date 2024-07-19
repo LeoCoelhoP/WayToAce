@@ -21,8 +21,20 @@
 	"southAmerica": "South America",
 	"oceania": "Oceania",
 	"north": "North",
+	"checkerPageTitle": "Please, Upload Your",
+	"answerKey": "Answer Key",
+	"useCamera": "Use Camera",
+	"or": "OR",
+	"uploadButton": "Select The Photo From Device",
+	"noUserChecker": "Log In To Use The Answer Key Checker And Get Custom Tips For Improving Your Scores",
 	"northeast": "Northeast",
 	"midwest": "Midwest",
 	"southeast": "Southeast",
-	"south": "South"
+	"south": "South",
+	"date": "Date",
+	"exam": "Exam",
+	"performance": "Performance",
+	"uploadAnswerKey": "Upload Your Answer Key",
+	"lastResults": "Last Results:",
+	"checkerBanner": "Kindly ensure all the paper in the picture is framed and please take the picture vertically!"
 }
