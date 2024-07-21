@@ -1,18 +1,19 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-export default function LogInIcon({ onClick, size, className }) {
+export default function LogInIcon({ className = '', onClick, size = 24 }) {
 	return (
 		<svg
-			onClick={onClick}
-			xmlns='http://www.w3.org/2000/svg'
-			width={size}
-			height={size}
-			viewBox='0 0 24 24'
+			className={className}
 			fill='none'
-			strokeWidth='2'
+			height={size}
+			onClick={onClick}
 			strokeLinecap='round'
 			strokeLinejoin='round'
-			className={className}>
+			strokeWidth='2'
+			width={size}
+			xmlns='http://www.w3.org/2000/svg'
+			viewBox='0 0 24 24'>
 			<path stroke='none' d='M0 0h24v24H0z' fill='none' />
 			<path d='M9 8v-2a2 2 0 0 1 2 -2h7a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-7a2 2 0 0 1 -2 -2v-2' />
 			<path d='M3 12h13l-3 -3' />
@@ -20,3 +21,9 @@ export default function LogInIcon({ onClick, size, className }) {
 		</svg>
 	);
 }
+
+LogInIcon.propTypes = {
+	className: PropTypes.string,
+	onClick: PropTypes.func,
+	size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+};

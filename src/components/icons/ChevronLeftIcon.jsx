@@ -1,22 +1,37 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-export default function chevronRightIcon({ size, onClick, className }) {
+export default function ChevronLeftIcon({
+	arialLabel = '',
+	className = '',
+	onClick,
+	role = '',
+	size = 24,
+}) {
 	return (
 		<svg
-			onClick={onClick}
-			xmlns='http://www.w3.org/2000/svg'
-			width={size}
-			height={size}
-			viewBox='0 0 24 24'
+			aria-label={arialLabel}
+			className={className}
 			fill='none'
-			stroke='currentColor'
-			strokeWidth='2'
+			height={size}
+			onClick={onClick}
+			role={role}
 			strokeLinecap='round'
 			strokeLinejoin='round'
-			className={className}>
-			<path stroke='none' d='M0 0h24v24H0z' fill='none' />
+			strokeWidth='2'
+			width={size}
+			xmlns='http://www.w3.org/2000/svg'
+			viewBox='0 0 24 24'>
 			<path d='M11 7l-5 5l5 5' />
 			<path d='M17 7l-5 5l5 5' />
 		</svg>
 	);
 }
+
+ChevronLeftIcon.propTypes = {
+	arialLabel: PropTypes.string,
+	className: PropTypes.string,
+	onClick: PropTypes.func,
+	role: PropTypes.string,
+	size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+};

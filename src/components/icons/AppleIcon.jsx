@@ -1,16 +1,16 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-export default function AppleIcon({ size, onClick, className }) {
+export default function AppleIcon({ className = '', onClick, size = 24 }) {
 	return (
 		<svg
-			onClick={onClick}
-			fill='#ffffff'
-			width={size}
+			aria-label='Menu Button'
+			className={className}
 			height={size}
+			onClick={onClick}
+			width={size}
 			viewBox='0 0 24 24'
-			xmlns='http://www.w3.org/2000/svg'
-			className={`${className}`}
-			stroke='#ffffff'>
+			xmlns='http://www.w3.org/2000/svg'>
 			<g id='SVGRepo_bgCarrier' strokeWidth='0' />
 
 			<g
@@ -26,3 +26,9 @@ export default function AppleIcon({ size, onClick, className }) {
 		</svg>
 	);
 }
+
+AppleIcon.propTypes = {
+	className: PropTypes.string,
+	onClick: PropTypes.func,
+	size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+};

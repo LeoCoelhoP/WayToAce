@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-export default function FacebookIcon({ className = '', onClick, size = 24 }) {
+export default function WifiIcon({ className = '', onClick, size = 24 }) {
 	return (
 		<svg
 			className={className}
@@ -14,12 +14,15 @@ export default function FacebookIcon({ className = '', onClick, size = 24 }) {
 			width={size}
 			xmlns='http://www.w3.org/2000/svg'
 			viewBox='0 0 24 24'>
-			<path d='M12.001 2.002c-5.522 0-9.999 4.477-9.999 9.999 0 4.99 3.656 9.126 8.437 9.879v-6.988h-2.54v-2.891h2.54V9.798c0-2.508 1.493-3.891 3.776-3.891 1.094 0 2.24.195 2.24.195v2.459h-1.264c-1.24 0-1.628.772-1.628 1.563v1.875h2.771l-.443 2.891h-2.328v6.988C18.344 21.129 22 16.992 22 12.001c0-5.522-4.477-9.999-9.999-9.999z' />
+			<path d='M12 18l.01 0' />
+			<path d='M9.172 15.172a4 4 0 0 1 5.656 0' />
+			<path d='M6.343 12.343a8 8 0 0 1 11.314 0' />
+			<path d='M3.515 9.515c4.686 -4.687 12.284 -4.687 17 0' />
 		</svg>
 	);
 }
 
-FacebookIcon.propTypes = {
+WifiIcon.propTypes = {
 	className: PropTypes.string,
 	onClick: PropTypes.func,
 	size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),

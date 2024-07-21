@@ -1,19 +1,19 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-export default function FilterIcon({ onClick, size, className }) {
+export default function FilterIcon({ className = '', onClick, size = 24 }) {
 	return (
 		<svg
-			onClick={onClick}
-			xmlns='http://www.w3.org/2000/svg'
-			width={size}
-			height={size}
-			viewBox='0 0 24 24'
+			className={className}
 			fill='none'
-			strokeWidth='2'
+			height={size}
+			onClick={onClick}
 			strokeLinecap='round'
 			strokeLinejoin='round'
-			className={`${className}`}>
-			<path stroke='none' d='M0 0h24v24H0z' fill='none' />
+			strokeWidth='2'
+			width={size}
+			xmlns='http://www.w3.org/2000/svg'
+			viewBox='0 0 24 24'>
 			<path d='M4 10a2 2 0 1 0 4 0a2 2 0 0 0 -4 0' />
 			<path d='M6 4v4' />
 			<path d='M6 12v8' />
@@ -26,3 +26,9 @@ export default function FilterIcon({ onClick, size, className }) {
 		</svg>
 	);
 }
+
+FilterIcon.propTypes = {
+	className: PropTypes.string,
+	onClick: PropTypes.func,
+	size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+};

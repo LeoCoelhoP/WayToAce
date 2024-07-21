@@ -36,5 +36,10 @@
 	"performance": "Desempenho",
 	"uploadAnswerKey": "Carregue Seu Gabarito",
 	"lastResults": "Últimos Resultados:",
-	"checkerBanner": "Por favor, assegure-se de que todo o papel na imagem esteja enquadrado e tire a foto na vertical!"
+	"checkerBanner": "Por favor, assegure-se de que todo o papel na imagem esteja enquadrado e tire a foto na vertical!",
+	"notFound": "Ops! Parece que esta página está brincando de esconde-esconde...",
+	"notFoundReturnBtn": "Volte para a página inicial clicando aqui",
+	"continueWithFacebook": "Continuar Com Faceebook",
+	"continueWithGoogle": "Continuar Com  Google",
+	"continueWithApple": "Continuar Com Apple"
 }

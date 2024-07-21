@@ -1,16 +1,19 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-export default function GoogleIcon({ onClick, size, className }) {
+export default function GoogleIcon({ className = '', onClick, size = 24 }) {
 	return (
 		<svg
-			onClick={onClick}
-			width={size}
+			className={className}
+			fill='none'
 			height={size}
-			viewBox='0 0 32 32'
-			data-name='Layer 1'
-			id='Layer_1'
-			className={`${className}`}
-			xmlns='http://www.w3.org/2000/svg'>
+			onClick={onClick}
+			strokeLinecap='round'
+			strokeLinejoin='round'
+			strokeWidth='2'
+			width={size}
+			xmlns='http://www.w3.org/2000/svg'
+			viewBox='0 0 32 32'>
 			<path
 				d='M23.75,16A7.7446,7.7446,0,0,1,8.7177,18.6259L4.2849,22.1721A13.244,13.244,0,0,0,29.25,16'
 				fill='#00ac47'
@@ -42,3 +45,9 @@ export default function GoogleIcon({ onClick, size, className }) {
 		</svg>
 	);
 }
+
+GoogleIcon.propTypes = {
+	className: PropTypes.string,
+	onClick: PropTypes.func,
+	size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+};

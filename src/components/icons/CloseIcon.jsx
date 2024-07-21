@@ -1,23 +1,27 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-export default function CloseIcon({ onClick, size, className }) {
-	console.log(className);
+export default function CloseIcon({ className = '', onClick, size = 24 }) {
 	return (
 		<svg
-			onClick={onClick}
-			xmlns='http://www.w3.org/2000/svg'
-			width={size}
-			height={size}
-			viewBox='0 0 24 24'
+			className={className}
 			fill='none'
-			stroke=''
-			strokeWidth='2'
+			height={size}
+			onClick={onClick}
 			strokeLinecap='round'
 			strokeLinejoin='round'
-			className={`${className}`}>
-			<path stroke='none' d='M0 0h24v24H0z' fill='none' />
+			strokeWidth='2'
+			width={size}
+			xmlns='http://www.w3.org/2000/svg'
+			viewBox='0 0 24 24'>
 			<path d='M18 6l-12 12' />
 			<path d='M6 6l12 12' />
 		</svg>
 	);
 }
+
+CloseIcon.propTypes = {
+	className: PropTypes.string,
+	onClick: PropTypes.func,
+	size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+};

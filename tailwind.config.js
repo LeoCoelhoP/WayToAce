@@ -18,6 +18,9 @@ export default {
 			boxShadow: {
 				bottom: '0 4px 5px -5px #333',
 			},
+			animation: {
+				'spin-slow': 'spin 2s linear infinite',
+			},
 		},
 	},
 	plugins: [],

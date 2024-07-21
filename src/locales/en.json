@@ -36,5 +36,10 @@
 	"performance": "Performance",
 	"uploadAnswerKey": "Upload Your Answer Key",
 	"lastResults": "Last Results:",
-	"checkerBanner": "Kindly ensure all the paper in the picture is framed and please take the picture vertically!"
+	"checkerBanner": "Kindly ensure all the paper in the picture is framed and please take the picture vertically!",
+	"notFound": "Whoops! This page seems to be playing hide and seek...",
+	"notFoundReturnBtn": "Return to the Home Page by clicking here",
+	"continueWithFacebook": "Continue With Faceebook",
+	"continueWithGoogle": "Continue With  Google",
+	"continueWithApple": "Continue With Apple"
 }

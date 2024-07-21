@@ -2,9 +2,10 @@ import React, { useState } from 'react';
 
 import Banner from '../components/Banner';
 import Filter from '../components/Filter';
-import NavBar from '../components/NavBar';
+import SecondaryNavBar from '../components/SecondaryNavBar';
 import PracticeExamsContainer from '../components/PracticeExamsContainer';
 import { useTranslation } from 'react-i18next';
+import Nav from '../components/Nav';
 
 const examNames = [
 	{
@@ -40,19 +41,22 @@ export default function Home() {
 	const { t } = useTranslation();
 
 	return (
-		<>
-			<Banner imgSrc={'banner.jpg'} bannerText={t('bannerText')} />
-			<NavBar
-				filtering={filtering}
-				searching={searching}
-				setSearching={setSearching}
-				setFiltering={setFiltering}
-				selected={selected}
-				setSelected={setSelected}
-				examNames={examNames}
-			/>
-			<Filter filtering={filtering} />
-			<PracticeExamsContainer practiceExams={[0]} />
-		</>
+		<div className='flex-col overflow-scroll bg-gradient-to-b dark:from-zinc-400 dark:to-zinc-700 from-zinc-100 to-zinc-300 font-rubik w-svw h-svh'>
+			<Nav />
+			<div className='flex flex-col w-full gap-4 p-4 mt-[5.2rem] h-fit'>
+				<Banner imgSrc={'banner.jpg'} bannerText={t('bannerText')} />
+				<SecondaryNavBar
+					filtering={filtering}
+					searching={searching}
+					setSearching={setSearching}
+					setFiltering={setFiltering}
+					selected={selected}
+					setSelected={setSelected}
+					examNames={examNames}
+				/>
+				<Filter filtering={filtering} />
+				<PracticeExamsContainer practiceExams={[0]} />
+			</div>
+		</div>
 	);
 }
