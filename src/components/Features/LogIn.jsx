@@ -30,7 +30,7 @@ export default function LogIn({
         <Banner imgSrc={bannerImage} bannerText={bannerText} />
         <div className="flex flex-col items-center justify-center w-full gap-4 p-4 md:p-0">
           <form
-            action="https://waytoace-back.onrender.com//auth/azure"
+            action="https://waytoace-back.onrender.com/auth/azure"
             method="GET"
             className="flex items-center justify-start w-full gap-4 text-lg font-bold text-white rounded-md shadow-md cursor-pointer bg-microsoftColor-50 Color-50 h-14"
           >
@@ -51,7 +51,7 @@ export default function LogIn({
           </form>
 
           <form
-            action="https://waytoace-back.onrender.com//auth/google"
+            action="https://waytoace-back.onrender.com/auth/google"
             method="GET"
             className="flex items-center justify-start w-full gap-4 text-lg font-bold text-black text-opacity-50 bg-white rounded-md shadow-md cursor-pointer h-14"
           >
@@ -72,7 +72,7 @@ export default function LogIn({
           </form>
 
           <form
-            action="https://waytoace-back.onrender.com//auth/github"
+            action="https://waytoace-back.onrender.com/auth/github"
             method="GET"
             className="flex items-center justify-start w-full gap-4 text-lg font-bold text-white bg-black rounded-md shadow-md cursor-pointer h-14"
           >
