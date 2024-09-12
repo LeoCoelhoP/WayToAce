@@ -14,7 +14,7 @@ export default function InstitutionsProvider({ children }) {
     async function fetchInstitutions() {
       const data = await getInstitutions();
       if (i18n.language === "en")
-        return setInstitutions([...data.institutions].reverse());
+        return setInstitutions([...data?.institutions].reverse());
 
       setInstitutions(data.institutions);
     }

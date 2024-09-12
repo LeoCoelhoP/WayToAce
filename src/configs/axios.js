@@ -6,7 +6,7 @@ const axiosInstance = axios.create({
 });
 
 axiosInstance.interceptors.response.use(
-  (response) => response, // Simply return the response if it's successful
+  (response) => response,
   (error) => {
     const { response } = error;
     const errorMessage = response?.data?.message || "Something went wrong";
