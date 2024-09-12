@@ -14,7 +14,6 @@ import Loading from "./components/UI/Loading";
 
 const Exam = lazy(() => import("./pages/Exam"));
 const Home = lazy(() => import("./pages/Home"));
-const NotFound = lazy(() => import("./pages/NotFound"));
 const PrivateRoute = lazy(() => import("./components/Layout/PrivateRoute"));
 
 function AppProviders({ children = null }) {
