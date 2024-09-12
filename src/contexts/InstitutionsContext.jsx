@@ -13,6 +13,8 @@ export default function InstitutionsProvider({ children }) {
   useEffect(() => {
     async function fetchInstitutions() {
       const data = await getInstitutions();
+      if (!data) return;
+
       if (i18n.language === "en")
         return setInstitutions([...data?.institutions].reverse());
 
